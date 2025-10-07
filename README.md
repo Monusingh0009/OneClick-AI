@@ -1,15 +1,15 @@
 <div align="center">
 
-# QUICKAI ⚡
+# ONECLICK AI ⚡
 
-AI-Powered Content Generation at Your Fingertips
+Your Ultimate AI Assistant for Content Creation and Image Editing
 
 ![Last Commit](https://img.shields.io/github/last-commit/elyse502/QuickAI?style=flat-square) 
 ![Languages](https://img.shields.io/github/languages/top/elyse502/QuickAI?style=flat-square&color=blue)
 ![License](https://img.shields.io/badge/license-ISC-blue?style=flat-square)
 ![Version](https://img.shields.io/badge/version-1.0.0-success?style=flat-square)
 
-*Powered by cutting-edge technologies:*
+*Harnessing modern tech for smarter workflows:*  
 
 ![React](https://img.shields.io/badge/React-19.1.1-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Express](https://img.shields.io/badge/Express-5.1.0-000000?style=flat-square&logo=express&logoColor=white)
@@ -18,168 +18,88 @@ AI-Powered Content Generation at Your Fingertips
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
 ![Clerk](https://img.shields.io/badge/Clerk-6C47FF?style=flat-square&logo=clerk&logoColor=white)
 
-## LIVE - DEMO 🌐
-Visit the 👉 [_LINK 🔗_](https://quick-ai-gray-eight.vercel.app/)
+🌐 **Try it Live:** [_OneClick AI Demo_](https://one-click-ai-phi.vercel.app/)
 
 </div>
 
 ---
 
-## Table of Contents
+## What is OneClick AI?
 
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Tech Stack](#tech-stack)
-- [Architecture](#architecture)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Environment Variables](#environment-variables)
-- [AI Capabilities](#ai-capabilities)
-- [API Endpoints](#api-endpoints)
-- [Deployment](#deployment)
-- [Performance](#performance)
-- [Contributing](#contributing)
-- [License](#license)
-- [Support](#support)
+OneClick AI is a versatile platform that combines AI-powered tools for content creation and image manipulation in one place. Whether you want to generate images, write blog posts, or optimize your resume, OneClick AI gives you the tools to do it instantly.  
+
+- Generate high-quality images from text prompts  
+- Remove backgrounds or unwanted objects from images  
+- Write articles or create blog titles with AI assistance  
+- Analyze and improve resumes with AI recommendations  
+- Share your creations with a growing community  
+
+Built using the **PERN stack** (PostgreSQL, Express, React, Node.js) and integrated with **OpenAI's AI models**, OneClick AI is fast, scalable, and user-friendly.  
 
 ---
 
-## Overview
+## Features at a Glance
 
-QUICKAI is a comprehensive AI SaaS platform that provides:
+### AI Tools
+- **Image Generation** – Create visuals from your text ideas  
+- **Background Removal** – Cleanly remove image backgrounds  
+- **Object Removal** – Remove unwanted elements seamlessly  
+- **Article Writing** – AI-assisted content creation  
+- **Blog Titles** – Generate catchy, optimized titles  
+- **Resume Review** – Get AI suggestions for improvement  
 
-- 🎨 AI Image Generation and Editing
-- 📝 Intelligent Content Creation
-- 📄 Resume Review and Optimization
-- 🖼️ Background Removal and Object Removal
-- ✍️ Article and Blog Title Generation
-- 👥 Community Sharing Features
+### User-Friendly Design
+- **Secure Login** – Powered by Clerk authentication  
+- **Interactive Dashboard** – Access all tools from a single hub  
+- **Community Sharing** – Showcase and explore creations  
+- **Responsive UI** – Optimized for desktops and mobile  
+- **Real-Time Results** – Instant AI processing  
 
-Built with the PERN stack (PostgreSQL, Express, React, Node.js) and integrated with OpenAI's powerful AI models.
-
----
-
-## Key Features
-
-### 🤖 AI-Powered Tools
-- **Generate Images**: Create stunning visuals from text prompts
-- **Remove Background**: Automatic background removal from images
-- **Remove Objects**: Clean up images by removing unwanted objects
-- **Write Articles**: AI-assisted article writing
-- **Blog Titles**: Generate engaging blog post titles
-- **Review Resume**: AI-powered resume analysis and suggestions
-
-### 👤 User Experience
-- **Secure Authentication**: Powered by Clerk
-- **Dashboard**: Central hub for all AI tools
-- **Community**: Share and discover creations
-- **Responsive Design**: Works on all devices
-- **Real-time Processing**: Instant AI results
-
-### 🛡️ Enterprise Grade
-- **Secure File Uploads**: Cloudinary integration
-- **PDF Processing**: Resume analysis from PDF files
-- **Scalable Architecture**: Ready for high traffic
-- **API First**: RESTful API design
+### Enterprise-Ready
+- **File Management** – Upload and process images securely with Cloudinary  
+- **PDF Support** – Analyze resumes in PDF format  
+- **Scalable Backend** – Handles high traffic efficiently  
+- **API-First Design** – Fully RESTful backend  
 
 ---
 
 ## Tech Stack
 
-### Frontend (Client)
-- **React 19** - Latest React with concurrent features
-- **Vite** - Next-generation build tool
-- **Tailwind CSS** - Utility-first CSS framework
-- **Axios** - HTTP client for API calls
-- **React Router DOM** - Client-side routing
-- **Lucide React** - Beautiful icons
-- **React Hot Toast** - Notifications
-- **React Markdown** - Markdown rendering
-- **Clerk** - Authentication and user management
+**Frontend**
+- React 19  
+- Vite for fast builds  
+- Tailwind CSS  
+- React Router DOM  
+- Axios  
+- React Hot Toast  
+- React Markdown  
+- Clerk for authentication  
+- Lucide React icons  
 
-### Backend (Server)
-- **Node.js** - JavaScript runtime
-- **Express 5** - Web framework for Node.js
-- **PostgreSQL** - Relational database (via Neon)
-- **OpenAI API** - AI model integration
-- **Cloudinary** - Image and file management
-- **Multer** - File upload handling
-- **CORS** - Cross-origin resource sharing
-- **PDF-Parse** - PDF text extraction
+**Backend**
+- Node.js + Express 5  
+- PostgreSQL (via Neon)  
+- OpenAI API  
+- Cloudinary for media storage  
+- Multer for file uploads  
+- CORS for cross-origin requests  
+- PDF-Parse for text extraction  
 
-### DevOps & Deployment
-- **Vercel** - Frontend deployment
-- **Neon** - PostgreSQL hosting
-- **Cloudinary** - Media CDN
-- **Clerk** - Authentication service
-
----
-
-## Architecture
-
-```json
-QuickAI/
-├── client/                 # React Frontend
-│   ├── src/
-│   │   ├── assets/        # Static assets
-│   │   ├── components/    # Reusable components
-│   │   │   ├── AITools.jsx
-│   │   │   ├── CreationItem.jsx
-│   │   │   ├── Footer.jsx
-│   │   │   ├── Hero.jsx
-│   │   │   ├── Navbar.jsx
-│   │   │   ├── Plan.jsx
-│   │   │   ├── Sidebar.jsx
-│   │   │   └── Testimonial.jsx
-│   │   ├── pages/         # Route pages
-│   │   │   ├── BlogTitles.jsx
-│   │   │   ├── Community.jsx
-│   │   │   ├── Dashboard.jsx
-│   │   │   ├── GenerateImages.jsx
-│   │   │   ├── Home.jsx
-│   │   │   ├── Layout.jsx
-│   │   │   ├── RemoveBackground.jsx
-│   │   │   ├── RemoveObject.jsx
-│   │   │   ├── ReviewResume.jsx
-│   │   │   └── WriteArticle.jsx
-│   │   └── ...           # Config files
-│
-├── server/                # Express Backend
-│   ├── configs/          # Configuration files
-│   │   ├── cloudinary.js # Cloudinary config
-│   │   ├── db.js         # Database config
-│   │   └── multer.js     # File upload config
-│   ├── controllers/      # Business logic
-│   │   ├── aiController.js
-│   │   └── userController.js
-│   ├── middlewares/      # Custom middlewares
-│   │   └── auth.js
-│   ├── routes/           # API routes
-│   │   ├── aiRoutes.js
-│   │   └── userRoutes.js
-│   └── server.js         # Server entry point
-```
+**Deployment**
+- Vercel (frontend)  
+- Render/Vercel (backend)  
+- Neon (PostgreSQL hosting)  
+- Cloudinary (media CDN)  
 
 ---
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js (v18 or higher)
-- npm (v8 or higher)
-- PostgreSQL database (Neon recommended)
-- OpenAI API account
-- Cloudinary account
-- Clerk account
-
+ 
 ### Installation
 
-1. Clone the repository:
+1. Clone the repo:
 ```console
-git clone https://github.com/elyse502/QuickAI.git
-cd QuickAI
+git clone https://github.com/Monusingh0009/OneClick-AI.git
+cd OneClick-AI
 ```
 
 2. Install client dependencies:
@@ -192,7 +112,7 @@ cd client && npm install
 cd ../server && npm install
 ```
 
-### Environment Variables
+4. Set environment variables
 
 **Client (.env)**
 ```console
@@ -211,136 +131,52 @@ CLERK_SECRET_KEY=sk_test_...
 PORT=5000
 ```
 
-4. Start the development servers:
+5. Start servers:
 ```console
-# Terminal 1 - Start backend
+# Backend
 cd server && npm run server
 
-# Terminal 2 - Start frontend
+# Frontend
 cd client && npm run dev
-```
 
----
+```
 
 ## AI Capabilities
 
 ### 🎨 Image Generation
-- Text-to-image conversion using DALL-E
-- Customizable image styles and sizes
-- High-resolution output
-
+- Turn text into stunning visuals
+ 
 ### 🖼️ Image Editing
-- Background removal with precision
-- Object removal and cleanup
-- Batch processing support
-
+- Remove backgrounds and objects effortlessly
+ 
 ### 📝 Content Creation
-- Article writing with tone control
-- Blog title generation
-- SEO optimization suggestions
+- Generate articles and blog titles with AI guidance
 
-### 📄 Document Processing
-- Resume analysis and scoring
+### 📄Resume Analysis
+- Get actionable suggestions and scoring
 - Skills gap identification
 - Improvement recommendations
 - PDF text extraction
 
 ---
 
-## API Endpoints
-
-### AI Routes (`/api/ai`)
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/generate-image` | Generate images from text |
-| POST | `/remove-background` | Remove image backgrounds |
-| POST | `/remove-object` | Remove objects from images |
-| POST | `/write-article` | Generate article content |
-| POST | `/generate-titles` | Create blog post titles |
-| POST | `/review-resume` | Analyze and score resumes |
-
-### User Routes (`/api/users`)
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/profile` | Get user profile |
-| POST | `/creations` | Save user creations |
-| GET | `/creations` | Get user's creations |
-| GET | `/community` | Get community creations |
-
----
-
 ## Deployment
 
-### Frontend (Vercel)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fyourusername%2FQuickAI%2Ftree%2Fmain%2Fclient)
+### Frontend:
+- Vercel
 
-### Backend (Render/Vercel)
-Deploy with environment variables configured for:
-- Neon PostgreSQL database
-- OpenAI API keys
-- Cloudinary credentials
-- Clerk secrets
+### Backend: 
+- Render or Vercel
 
-### Database (Neon)
-```console
-# Recommended: Neon PostgreSQL
-https://neon.tech/
-```
+### Database: 
+- Neon PostgreSQL
 
----
+### Media: 
+- Cloudinary
 
-## Performance
-
-- ⚡ Lighthouse Score: 95+
-- 📦 Optimized Bundle Size
-- 🚀 Fast AI Processing
-- 📱 Mobile Responsive
-- 🔒 Secure Authentication
-
----
-
-## Contributing
-
-We welcome contributions! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## License
-
-Distributed under the ISC License. See [`LICENSE`](https://github.com/elyse502/QuickAI/blob/main/LICENSE) for more information.
-
----
-
-## Support
-
-For support, email _elyseniyibizi502@gmail.com_ or create an issue in the GitHub repository.
-
----
-
-## 📞 Contact
-For any questions or support, please contact:
-- [**NIYIBIZI Elysée**](https://linktr.ee/niyibizi_elysee)👨🏿‍💻 | [Github](https://github.com/elyse502) | [Linkedin](https://www.linkedin.com/in/niyibizi-elys%C3%A9e/) | [Twitter](https://twitter.com/Niyibizi_Elyse).
-- **Email**: <elyseniyibizi502@gmail.com>
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/niyibizi-elys%C3%A9e/) [![@phenrysay](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Niyibizi_Elyse) [![pH-7](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/elyse502)
-
----
-
-<div align="center">
-
-**QUICKAI** - Supercharge your creativity with AI! 🚀
-
-*Built with ❤️ using the PERN stack and cutting-edge AI technologies.*
-
-**Made with ❤️ by <i>[Elysée NIYIBIZI](https://elyse502.github.io/Elysee-Portfolio/)</i>**
-
-[⬆ Back to Top](#table-of-contents)
+### Authentication: 
+- Clerk
+ 
 
 </div>
 
